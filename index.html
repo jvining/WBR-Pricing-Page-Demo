@@ -19,7 +19,7 @@
 <body class="pt-5">
 	
 	<!-- Original Clean Markup-->
-	<div class="container">
+	<div class="container" hidden>
 		<div class="row my-3">
 			<div class="col-md-12 text-center">
 				<h2>Original Clean Markup</h2>
@@ -62,17 +62,16 @@
 			</div>
 		</div>
 	</div>
- 	<div class="container my-5 py-5">
+ 	<div class="container my-5 py-5" hidden>
 		<div class="row">
 			<div class="col-md-12">
 				<hr/>
 			</div>
 		</div>
 	</div>
-  
 
 	<!-- Optimized Markup v1 -->
-	<div class="container-fluid">
+	<div class="container-fluid" hidden>
 	  	<style>
 			#pricing-app.pricing-app .card {width: 100%!important;max-width: 450px!important;}
 	 		@media (min-width:990px){ #pricing-app.pricing-app .card {max-width: 450px!important;}}
@@ -133,7 +132,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container my-5 py-5">
+	<div class="container my-5 py-5" hidden>
 		<div class="row">
 			<div class="col-md-12">
 				<hr/>
@@ -144,7 +143,8 @@
 
 	<!-- Optimized Markup v2 -->
 	<div class="container-fluid mb-5">
-
+		<link href="css/pricing-package-color.css" rel="stylesheet" type="text/css">
+		
 		<div class="container">
 			<div class="row my-3">
 				<div class="col-md-12 text-center">
@@ -152,22 +152,14 @@
 				</div>
 			</div>
 		</div>
-
-	 
-	 <link href="css/pricing-package-color.css" rel="stylesheet" type="text/css">
-	 <style>
- 		 
-  		.row.pricing-app-2 .package {background:#666!important; color:#fff!important;}
-		.row.pricing-app-2 .highlight{color:unset!important;}
-	 </style>
-		
+ 	 
 		<div class="row d-flex align-items-stretch pricing-app pricing-app-2" id="pricing-app">
 			<div class="tiers mx-auto px-3">
 				<div class="tab-content">
 					<div class="cards">
 
 						<div class="col-md col-sm-6 col-12 my-3">
-							<div class="card m-0 p-0 h-100" onclick="location.href='#';" style="cursor: pointer;">
+							<div class="card m-0 p-0 h-100 mx-auto" onclick="location.href='#';" style="cursor: pointer;">
 								<h2 class="package package-head font-weight-bold m-0">Four Day Pass for Retailers Only - No Exceptions</h2> 
 								<p class="dates">This right here is Package Description text which could go across multiple lines</p>
 								<div class="list-group-item text-center">
@@ -189,9 +181,8 @@
 							</div>
 						</div>
 						
-						<!--- Duplicate Me ! --->
-						<div class="col-md col-sm-6 col-12 my-3">
-	 						<div class="card m-0 p-0 h-100 card-primary" onclick="location.href='#';" style="cursor: pointer;">
+ 						<div class="col-md col-sm-6 col-12 my-3">
+	 						<div class="card m-0 p-0 h-100 card-primary mx-auto" onclick="location.href='#';" style="cursor: pointer;">
 	 							<h2 class="package package-head font-weight-bold m-0">Four Day Pass for Retailers Only - No Exceptions</h2> 
 	 							<p class="dates">This right here is Package Description text which could go across multiple lines</p>
 	 							<div class="list-group-item text-center">
@@ -212,27 +203,12 @@
 	 							<button href="#" class="btn btn-event btn-md font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
 							</div>
 						</div>
-  
-  
+   
    					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-
-
-
-
-	<footer class="bg-dark mt-5">
-		<div class="container-fluid d-flex justify-content-center pt-3">
-		   <div class="row d-flex align-items-center">
-				<div class="col-md-12 text-center">
-					<p class="text-bold text-white">WBR Pricing Page Demo</p>
-				</div>
-			</div>
-		</div>
-	</footer>
 
  	<!-- JS -->
 	<script src="js/jquery.min.js"></script>
