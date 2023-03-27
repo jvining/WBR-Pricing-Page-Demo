@@ -1,0 +1,38 @@
+.card.card-primary h2.package-head{background:#1c6da4!important;}
+.card.card-primary .list-group-item{background:#1c6da41a!important;}
+.card.card-primary .list-group-item h2 span.highlight {color:#1c6da4!important;}
+.card.card-primary button {background:#1c6da4!important; color:#fff;} 
+
+.card.card-secondary h2.package-head{background:#6c757d!important;}
+.card.card-secondary .list-group-item{background:#6c757d1a!important;}
+.card.card-secondary .list-group-item h2 span.highlight {color:#6c757d!important;}
+.card.card-secondary button {background:#6c757d!important; color:#fff;} 
+
+
+.card.card-danger h2.package-head{background:#dc3545!important;}
+.card.card-danger .list-group-item{background:#dc35451a!important;}
+.card.card-danger .list-group-item h2 span.highlight {color:#dc3545!important;}
+.card.card-danger button {background:#dc3545!important; color:#fff;} 
+
+
+.card.card-warning h2.package-head{background:#ffc107!important;}
+.card.card-warning .list-group-item{background:#ffc1071a!important;}
+.card.card-warning .list-group-item h2 span.highlight {color:#ffc107!important;}
+.card.card-warning button {background:#ffc107!important; color:#fff;} 
+
+
+.card.card-success h2.package-head{background:#28a745!important;}
+.card.card-success .list-group-item{background:#28a7451a!important;}
+.card.card-success .list-group-item h2 span.highlight {color:#28a745!important;}
+.card.card-success button {background:#28a745!important; color:#fff;} 
+
+
+.card.card-info h2.package-head{background:#17a2b8!important;}
+.card.card-info .list-group-item{background:#17a2b81a!important;}
+.card.card-info .list-group-item h2 span.highlight {color:#17a2b8!important;}
+.card.card-info button {background:#17a2b8!important; color:#fff;} 
+
+.card.card-dark h2.package-head{background:#343a40!important;}
+.card.card-dark .list-group-item{background:#343a401a!important;}
+.card.card-dark .list-group-item h2 span.highlight {color:#343a40!important;}
+.card.card-dark button {background:#343a40!important; color:#fff;} 

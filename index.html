@@ -13,13 +13,18 @@
 	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
  	<link href="css/open-sans.css" rel="stylesheet" type="text/css">
  	<link href="css/pricing.css" rel="stylesheet" type="text/css">
-  	<link href="style.css" rel="stylesheet" type="text/css">
+   	<link href="style.css" rel="stylesheet" type="text/css">
 	
 </head>
-<body class="py-5">
+<body class="pt-5">
 	
 	<!-- Original Clean Markup-->
-	<div class="container">		
+	<div class="container">
+		<div class="row my-3">
+			<div class="col-md-12 text-center">
+				<h2>Original Clean Markup</h2>
+			</div>
+		</div>
 		<div class="row" id="pricing-app" >
 			<div class="tiers col-sm-12">
 				<div class="tab-content">
@@ -57,27 +62,28 @@
 			</div>
 		</div>
 	</div>
-	
-	
-	<div class="container my-5 py-5">
+ 	<div class="container my-5 py-5">
 		<div class="row">
 			<div class="col-md-12">
 				<hr/>
 			</div>
 		</div>
 	</div>
- 
- 
- 	<style>
-		#pricing-app.pricing-app .card {width: 100%!important;max-width: 450px!important;}
- 		@media (min-width: 1200px)
-		#pricing-app.pricing-app .card {max-width: 450px!important;}
- 		@media (min-width: 992px)
-		#pricing-app.pricing-app .card {max-width: 450px!important;}
- 	</style>
- 
-	<!-- Optimized Markup-->
-	<div class="container-fluid">		
+  
+
+	<!-- Optimized Markup v1 -->
+	<div class="container-fluid">
+	  	<style>
+			#pricing-app.pricing-app .card {width: 100%!important;max-width: 450px!important;}
+	 		@media (min-width:990px){ #pricing-app.pricing-app .card {max-width: 450px!important;}}
+	 	</style>
+		<div class="container">
+			<div class="row my-3">
+				<div class="col-md-12 text-center">
+					<h2>Optimized Markup v1</h2>
+				</div>
+			</div>
+		</div>
 		<div class="row pricing-app" id="pricing-app" >
 			<div class="tiers col-sm-12">
 				<div class="tab-content">
@@ -127,7 +133,107 @@
 			</div>
 		</div>
 	</div>
+	<div class="container my-5 py-5">
+		<div class="row">
+			<div class="col-md-12">
+				<hr/>
+			</div>
+		</div>
+	</div>
  
+
+	<!-- Optimized Markup v2 -->
+	<div class="container-fluid mb-5">
+
+		<div class="container">
+			<div class="row my-3">
+				<div class="col-md-12 text-center">
+					<h2>Optimized Markup v2</h2>
+				</div>
+			</div>
+		</div>
+
+	 
+	 <link href="css/pricing-package-color.css" rel="stylesheet" type="text/css">
+	 <style>
+ 		 
+  		.row.pricing-app-2 .package {background:#666!important; color:#fff!important;}
+		.row.pricing-app-2 .highlight{color:unset!important;}
+	 </style>
+		
+		<div class="row d-flex align-items-stretch pricing-app pricing-app-2" id="pricing-app">
+			<div class="tiers mx-auto px-3">
+				<div class="tab-content">
+					<div class="cards">
+
+						<div class="col-md col-sm-6 col-12 my-3">
+							<div class="card m-0 p-0 h-100" onclick="location.href='#';" style="cursor: pointer;">
+								<h2 class="package package-head font-weight-bold m-0">Four Day Pass for Retailers Only - No Exceptions</h2> 
+								<p class="dates">This right here is Package Description text which could go across multiple lines</p>
+								<div class="list-group-item text-center">
+								<h2 class="m-0 fa-3x">
+									<span class="line-through font-weight-bold">$2249</span>
+									<span class="highlight font-weight-bold">$1749</span>
+								</h2> 
+								<small>Bigger Early Bird, Save $500!</small>
+							</div> 
+								<div class="card-summary">
+								<ul class="details">
+									<li class="p-2">Learn from the most thought provoking presentations around</li>
+									<li class="p-2">Find the hottest disrupters and fastest growing ecommerce companies</li>
+									<li class="p-2">Includes all meals and refreshments during conference</li>
+									<li class="p-2">Make new friends and contacts during the networking functions</li>
+								</ul>
+							</div> 
+								<button href="#" class="btn btn-secondary btn-md font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+							</div>
+						</div>
+						
+						<!--- Duplicate Me ! --->
+						<div class="col-md col-sm-6 col-12 my-3">
+	 						<div class="card m-0 p-0 h-100 card-primary" onclick="location.href='#';" style="cursor: pointer;">
+	 							<h2 class="package package-head font-weight-bold m-0">Four Day Pass for Retailers Only - No Exceptions</h2> 
+	 							<p class="dates">This right here is Package Description text which could go across multiple lines</p>
+	 							<div class="list-group-item text-center">
+									<h2 class="m-0 fa-3x">
+										<span class="line-through font-weight-bold">$2249</span>
+										<span class="highlight font-weight-bold">$1749</span>
+									</h2> 
+									<small>Bigger Early Bird, Save $500!</small>
+								</div> 
+	 							<div class="card-summary">
+									<ul class="details">
+										<li class="p-2">Morbi tristique senectus et netus et malesuada fames ac turpis egestas.</li>
+										<li class="p-2">Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</li>
+										<li class="p-2">tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi .</li>
+										<li class="p-2">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</li>
+									</ul>
+								</div> 
+	 							<button href="#" class="btn btn-event btn-md font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+							</div>
+						</div>
+  
+  
+   					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<footer class="bg-dark mt-5">
+		<div class="container-fluid d-flex justify-content-center pt-3">
+		   <div class="row d-flex align-items-center">
+				<div class="col-md-12 text-center">
+					<p class="text-bold text-white">WBR Pricing Page Demo</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
  	<!-- JS -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
