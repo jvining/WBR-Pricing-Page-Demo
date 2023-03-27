@@ -1,3 +1,13 @@
+.row.pricing-app-2 .package {background:#666!important; color:#fff!important;}
+.row.pricing-app-2 .highlight{color:unset!important;}
+.row.pricing-app-2 .cards {display: flex; flex-flow:wrap;}
+
+.cards:has(> :nth-child(1)):has(> :nth-child(-n+1):last-child) > [class*="col-"] {  min-width:450px;}
+.cards:has(> :nth-child(2)):has(> :nth-child(-n+3):last-child) > [class*="col-"] {  min-width:400px;}
+.cards:has(> :nth-child(3)):has(> :nth-child(-n+4):last-child) > [class*="col-"] {  min-width:350px;}
+.cards:has(> :nth-child(4)):has(> :nth-child(-n+5):last-child) > [class*="col-"] {  min-width:300px;}
+.cards:has(> :nth-child(5)) > [class*="col-"] { transition:.3s ease-in-out; min-width:300px;}
+
 .card.card-primary h2.package-head{background:#1c6da4!important;}
 .card.card-primary .list-group-item{background:#1c6da41a!important;}
 .card.card-primary .list-group-item h2 span.highlight {color:#1c6da4!important;}
