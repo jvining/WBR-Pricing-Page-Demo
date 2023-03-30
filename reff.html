@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<title>WBR Pricing Page Demo</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<meta name="author" content="https://github.com/jvining">
+	<meta name="description" content="WBR Pricing Page Demo">
+ 
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+ 	<link href="css/open-sans.css" rel="stylesheet" type="text/css">
+ 	<link href="css/pricing.css" rel="stylesheet" type="text/css">
+   	<link href="style.css" rel="stylesheet" type="text/css">
+	
+</head>
+<body class="pt-5">
+	
+	<!-- Original Clean Markup-->
+	<div class="container">
+		<div class="row my-3">
+			<div class="col-md-12 text-center">
+				<h2>Original Clean Markup</h2>
+			</div>
+		</div>
+		<div class="row" id="pricing-app" >
+			<div class="tiers col-sm-12">
+				<div class="tab-content">
+					<div class="cards">
+						<a href="#" class="card">
+							<span class="package"><p class="package-head text-white m0"><strong>Four Day Pass for Retailers Only - No Exceptions</strong></p></span> 
+							<span class="dates"><p>This right here is Package Description text which could go across multiple lines</p></span> 
+							<div class="list-group-item light-blue"><h2 style="margin: 0px;"><strong><p class="line-through font-weight-bold">$2249</p></strong> <span class="highlight font-weight-bold">$1749</span></h2> <small>Bigger Early Bird, Save $500!</small></div> 
+							<span class="card-summary">
+								<ul class="details">
+									<li class="pl-0"><span class="pl-2">Learn from the most thought provoking presentations around</span> <hr class="m0"></li>
+									<li class="pl-0"><span class="pl-2">Find the hottest disrupters and fastest growing ecommerce companies</span> <hr class="m0"></li>
+									<li class="pl-0"><span class="pl-2">Includes all meals and refreshments during conference</span> <hr class="m0"></li>
+									<li class="pl-0"><span class="pl-2">Make new friends and contacts during the networking functions</span> <hr class="m0"></li>
+								</ul>
+							</span> 
+							<button class="btn btn-primary add-btn">Add Attendee <i class="fa fa-plus"></i></button>
+						</a>
+						<a href="#" class="card">
+							<span class="package"><p class="package-head text-white m0"><strong>Four Day Pass for Retailers Only - No Exceptions</strong></p></span> 
+							<span class="dates"><p>This right here is Package Description text which could go across multiple lines</p></span> 
+							<div class="list-group-item light-blue"><h2 style="margin: 0px;"><strong><p class="line-through font-weight-bold">$2249</p></strong> <span class="highlight font-weight-bold">$1749</span></h2> <small>Bigger Early Bird, Save $500!</small></div> 
+							<span class="card-summary">
+								<ul class="details">
+									<li class="pl-0"><span class="pl-2">Learn from the most thought provoking presentations around</span> <hr class="m0"></li>
+									<li class="pl-0"><span class="pl-2">Find the hottest disrupters and fastest growing ecommerce companies</span> <hr class="m0"></li>
+									<li class="pl-0"><span class="pl-2">Includes all meals and refreshments during conference</span> <hr class="m0"></li>
+									<li class="pl-0"><span class="pl-2">Make new friends and contacts during the networking functions</span> <hr class="m0"></li>
+								</ul>
+							</span> 
+							<button class="btn btn-primary add-btn">Add Attendee <i class="fa fa-plus"></i></button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ 	<div class="container my-5 py-5">
+		<div class="row">
+			<div class="col-md-12">
+				<hr/>
+			</div>
+		</div>
+	</div>
+
+	<!-- Optimized Markup v1 -->
+	<div class="container-fluid">
+	  	<style>
+			#pricing-app.pricing-app .card {width: 100%!important;max-width: 450px!important;}
+	 		@media (min-width:990px){ #pricing-app.pricing-app .card {max-width: 450px!important;}}
+	 	</style>
+		<div class="container">
+			<div class="row my-3">
+				<div class="col-md-12 text-center">
+					<h2>Optimized Markup v1</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row pricing-app" id="pricing-app" >
+			<div class="tiers col-sm-12">
+				<div class="tab-content">
+					<div class="cards">
+ 						<div class="card p-0" onclick="location.href='#';" style="cursor: pointer;">
+ 							<h2 class="package package-primary package-head font-weight-bold text-white m-0">Four Day Pass for Retailers Only - No Exceptions</h2> 
+ 							<p class="dates">This right here is Package Description text which could go across multiple lines</p>
+ 							<div class="list-group-item light-blue text-center">
+								<h2 class="m-0 fa-3x">
+									<span class="line-through font-weight-bold">$2249</span>
+									<span class="highlight font-weight-bold">$1749</span>
+								</h2> 
+								<small>Bigger Early Bird, Save $500!</small>
+							</div> 
+ 							<div class="card-summary">
+								<ul class="details">
+									<li class="py-2">Learn from the most thought provoking presentations around</li>
+									<li class="py-2">Find the hottest disrupters and fastest growing ecommerce companies</li>
+									<li class="py-2">Includes all meals and refreshments during conference</li>
+									<li class="py-2">Make new friends and contacts during the networking functions</li>
+								</ul>
+							</div> 
+							<button class="btn btn-primary d-block mx-auto w-75 mt-2 mb-3 add-btn">Add Attendee <i class="fa fa-plus"></i></button>
+						</div>
+  						<div class="card p-0" onclick="location.href='#';" style="cursor: pointer;">
+ 							<h2 class="package package-primary package-head font-weight-bold text-white m-0">Four Day Pass for Retailers Only - No Exceptions</h2> 
+ 							<p class="dates">This right here is Package Description text which could go across multiple lines</p>
+ 							<div class="list-group-item light-blue text-center">
+								<h2 class="m-0 fa-3x">
+									<span class="line-through font-weight-bold">$2249</span>
+									<span class="highlight font-weight-bold">$1749</span>
+								</h2> 
+								<small>Bigger Early Bird, Save $500!</small>
+							</div> 
+ 							<div class="card-summary">
+								<ul class="details">
+									<li class="py-2">Learn from the most thought provoking presentations around</li>
+									<li class="py-2">Find the hottest disrupters and fastest growing ecommerce companies</li>
+									<li class="py-2">Includes all meals and refreshments during conference</li>
+									<li class="py-2">Make new friends and contacts during the networking functions</li>
+								</ul>
+							</div> 
+							<button class="btn btn-primary d-block mx-auto w-75 mt-2 mb-3 add-btn">Add Attendee <i class="fa fa-plus"></i></button>
+						</div>
+ 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container my-5 py-5">
+		<div class="row">
+			<div class="col-md-12">
+				<hr/>
+			</div>
+		</div>
+	</div>
+  
+ 	<!-- JS -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+
+</body>
+</html>
