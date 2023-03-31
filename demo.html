@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<title>WBR Pricing Page Demo</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<meta name="author" content="https://github.com/jvining">
+	<meta name="description" content="WBR Pricing Page Demo">
+ 
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+ 	<link href="css/open-sans.css" rel="stylesheet" type="text/css">
+   	<link href="style.css" rel="stylesheet" type="text/css">
+ 	<style>
+		#pricing-app:has(> :nth-child(1)):has(> :nth-child(-n+1):last-child) > .package {min-width:350px;}
+		#pricing-app:has(> :nth-child(2)):has(> :nth-child(-n+3):last-child) > .package {min-width:350px;}
+		#pricing-app:has(> :nth-child(3)):has(> :nth-child(-n+4):last-child) > .package {max-width:450px;}
+		#pricing-app:has(> :nth-child(4)):has(> :nth-child(-n+5):last-child) > .package {max-width:350px;}
+		#pricing-app:has(> :nth-child(5)) > [class*="col-"] {max-width:450px;}
+		
+ 		.card h3.card-title {color:#fff; font-size:1.25rem;}
+		.card button {color:#fff; border-color:unset;} 
+		.card .card-title {background-color:#6c757d;} 
+		.card .package-price{background:#6c757d1a!important;}
+		.card .package-details li:nth-child(even){background-color:#6c757d0d!important;}
+		
+ 		.card.card-primary h3.card-title {background-color:#3B71CA!important;}
+		.card.card-primary .package-price{background:#3B71CA1a!important;}
+		.card.card-primary .package-price h3 span.highlight{color:#3B71CA!important;}
+		.card.card-primary button {background:#3B71CA!important;} 
+		.card.card-primary button:hover {background:#3B71CA!important;} 
+
+ 		.card.card-success h3.card-title {background-color:#5cb85c!important;}
+		.card.card-success .package-price{background:#5cb85c1a!important;}
+		.card.card-success .package-price h3 span.highlight{color:#5cb85c!important;}
+		.card.card-success button {background:#5cb85c!important;} 
+		.card.card-success button:hover {background:#5cb85c!important;} 
+
+ 		.card.card-info h3.card-title {background-color:#5bc0de!important;}
+		.card.card-info .package-price{background:#5bc0de1a!important;}
+		.card.card-info .package-price h3 span.highlight{color:#5bc0de!important;}
+		.card.card-info button {background:#5bc0de!important;} 
+		.card.card-info button:hover {background:#5bc0de!important;} 
+		
+ 		.card.card-warning h3.card-title {background-color:#f0ad4e!important;}
+		.card.card-warning .package-price{background:#f0ad4e1a!important;}
+		.card.card-warning .package-price h3 span.highlight{color:#f0ad4e!important;}
+		.card.card-warning button {background:#f0ad4e!important;} 
+		.card.card-warning button:hover {background:#f0ad4e!important;} 
+ 		
+		.card.card-danger h3.card-title {background-color:#d9534f!important;}
+		.card.card-danger .package-price{background:#d9534f1a!important;}
+		.card.card-danger .package-price h3 span.highlight{color:#d9534f!important;}
+		.card.card-danger button {background:#d9534f!important;} 
+		.card.card-danger button:hover {background:#d9534f!important;} 
+
+		.card.card-inverse h3.card-title {background-color:#292b2c!important;}
+		.card.card-inverse .package-price{background:#292b2c1a!important;}
+		.card.card-inverse .package-price h3 span.highlight{color:#292b2c!important;}
+		.card.card-inverse button {background:#292b2c!important;} 
+		.card.card-inverse button:hover {background:#292b2c!important;} 
+
+ 	</style>
+ 
+</head>
+<body>
+
+	<div class="container"  id="pricing-app">
+
+		<!--- T1P1, T1P2, T2P1  --->
+		<div class="row my-3">
+			<div class="col-md-12 text-center">
+				<h2 class="font-weight-bold"><span class="text-primary">T1P1</span>, <span class="text-primary">T1P2</span>, <span class="text-danger">T2P1</span></h2>
+			</div>
+		</div>
+		<div class="row d-flex align-items-stretch tiers">
+			<div class="package col-md-4 col-sm-6 col-12 mx-auto my-3">
+				<div class="card card-primary h-100 mx-auto my-3 shadow" onclick="location.href='#';" style="cursor: pointer;">
+					<h3 class="card-title font-weight-bold m-0 p-3">Four Day Pass for Retailers Only - No Exceptions</h3> 
+					<p class="package-description p-3">This right here is Package Description text which could go across multiple lines</p>
+					<div class="package-price">
+						<h3 class="m-0 fa-3x text-center">
+							<span class="d-block font-weight-bold small"><s>$2249</s></span>
+							<span class="d-block highlight font-weight-bold">$1749</span>
+						</h3> 
+						<p class="text-center">Bigger Early Bird, Save $500!</p>
+ 					</div>
+ 				    <div class="card-body px-0">
+						<ul class="package-details list-group list-group-flush">
+							<li class="list-group-item px-3">Learn from the most thought provoking presentations around</li>
+							<li class="list-group-item px-3">Find the hottest disrupters and fastest growing ecommerce companies</li>
+							<li class="list-group-item px-3">Includes all meals and refreshments during conference</li>
+							<li class="list-group-item px-3">Make new friends and contacts during the networking functions</li>
+						</ul>
+  				    </div>
+					<button href="#" class="btn btn-secondary btn-lg font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+				</div>
+			</div>
+			<div class="package col-md-4 col-sm-6 col-12 mx-auto my-3">
+				<div class="card card-primary h-100 mx-auto my-3 shadow" onclick="location.href='#';" style="cursor: pointer;">
+					<h3 class="card-title font-weight-bold m-0 p-3">Four Day Pass for Retailers Only - No Exceptions</h3> 
+					<p class="package-description p-3">This right here is Package Description text which could go across multiple lines</p>
+					<div class="package-price">
+						<h3 class="m-0 fa-3x text-center">
+							<span class="d-block font-weight-bold small"><s>$2249</s></span>
+							<span class="d-block highlight font-weight-bold">$1749</span>
+						</h3> 
+						<p class="text-center">Bigger Early Bird, Save $500!</p>
+ 					</div>
+ 				    <div class="card-body px-0">
+						<ul class="package-details list-group list-group-flush">
+							<li class="list-group-item px-3">Learn from the most thought provoking presentations around</li>
+							<li class="list-group-item px-3">Find the hottest disrupters and fastest growing ecommerce companies</li>
+							<li class="list-group-item px-3">Includes all meals and refreshments during conference</li>
+							<li class="list-group-item px-3">Make new friends and contacts during the networking functions</li>
+						</ul>
+  				    </div>
+					<button href="#" class="btn btn-secondary btn-lg font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+				</div>
+			</div>
+			<div class="package col-md-4 col-sm-6 col-12 mx-auto my-3">
+				<div class="card card-danger h-100 mx-auto my-3 shadow" onclick="location.href='#';" style="cursor: pointer;">
+					<h3 class="card-title font-weight-bold m-0 p-3">Four Day Pass for Retailers Only - No Exceptions</h3> 
+					<p class="package-description p-3">This right here is Package Description text which could go across multiple lines</p>
+					<div class="package-price">
+						<h3 class="m-0 fa-3x text-center">
+							<span class="d-block font-weight-bold small"><s>$2249</s></span>
+							<span class="d-block highlight font-weight-bold">$1749</span>
+						</h3> 
+						<p class="text-center">Bigger Early Bird, Save $500!</p>
+ 					</div>
+ 				    <div class="card-body px-0">
+						<ul class="package-details list-group list-group-flush">
+							<li class="list-group-item px-3">Learn from the most thought provoking presentations around</li>
+							<li class="list-group-item px-3">Find the hottest disrupters and fastest growing ecommerce companies</li>
+							<li class="list-group-item px-3">Includes all meals and refreshments during conference</li>
+							<li class="list-group-item px-3">Make new friends and contacts during the networking functions</li>
+						</ul>
+  				    </div>
+					<button href="#" class="btn btn-secondary btn-lg font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+				</div>
+			</div>
+ 		</div>
+		<!--- END  T1P1, T1P2, T2P1 --->
+		
+		<!--- T1P1, T2P1, T3P1  --->
+		<div class="row my-3">
+			<div class="col-md-12 my-3 py-3">
+				<hr/>
+			</div>
+			<div class="col-md-12 text-center">
+				<h2 class="font-weight-bold"><span class="text-primary">T1P1</span>, <span class="text-danger">T2P1</span>, <span class="text-success">T3P1</span></h2>
+			</div>
+		</div>
+		<div class="row d-flex align-items-stretch tiers">
+			<div class="package col-md-4 col-sm-6 col-12 mx-auto my-3">
+				<div class="card card-primary h-100 mx-auto my-3 shadow" onclick="location.href='#';" style="cursor: pointer;">
+					<h3 class="card-title font-weight-bold m-0 p-3">Four Day Pass for Retailers Only - No Exceptions</h3> 
+					<p class="package-description p-3">This right here is Package Description text which could go across multiple lines</p>
+					<div class="package-price">
+						<h3 class="m-0 fa-3x text-center">
+							<span class="d-block font-weight-bold small"><s>$2249</s></span>
+							<span class="d-block highlight font-weight-bold">$1749</span>
+						</h3> 
+						<p class="text-center">Bigger Early Bird, Save $500!</p>
+ 					</div>
+ 				    <div class="card-body px-0">
+						<ul class="package-details list-group list-group-flush">
+							<li class="list-group-item px-3">Learn from the most thought provoking presentations around</li>
+							<li class="list-group-item px-3">Find the hottest disrupters and fastest growing ecommerce companies</li>
+							<li class="list-group-item px-3">Includes all meals and refreshments during conference</li>
+							<li class="list-group-item px-3">Make new friends and contacts during the networking functions</li>
+						</ul>
+  				    </div>
+					<button href="#" class="btn btn-secondary btn-lg font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+				</div>
+			</div>
+			<div class="package col-md-4 col-sm-6 col-12 mx-auto my-3">
+				<div class="card card-danger h-100 mx-auto my-3 shadow" onclick="location.href='#';" style="cursor: pointer;">
+					<h3 class="card-title font-weight-bold m-0 p-3">Four Day Pass for Retailers Only - No Exceptions</h3> 
+					<p class="package-description p-3">This right here is Package Description text which could go across multiple lines</p>
+					<div class="package-price">
+						<h3 class="m-0 fa-3x text-center">
+							<span class="d-block font-weight-bold small"><s>$2249</s></span>
+							<span class="d-block highlight font-weight-bold">$1749</span>
+						</h3> 
+						<p class="text-center">Bigger Early Bird, Save $500!</p>
+ 					</div>
+ 				    <div class="card-body px-0">
+						<ul class="package-details list-group list-group-flush">
+							<li class="list-group-item px-3">Learn from the most thought provoking presentations around</li>
+							<li class="list-group-item px-3">Find the hottest disrupters and fastest growing ecommerce companies</li>
+							<li class="list-group-item px-3">Includes all meals and refreshments during conference</li>
+							<li class="list-group-item px-3">Make new friends and contacts during the networking functions</li>
+						</ul>
+  				    </div>
+					<button href="#" class="btn btn-secondary btn-lg font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+				</div>
+			</div>
+			<div class="package col-md-4 col-sm-6 col-12 mx-auto my-3">
+				<div class="card card-success h-100 mx-auto my-3 shadow" onclick="location.href='#';" style="cursor: pointer;">
+					<h3 class="card-title font-weight-bold m-0 p-3">Four Day Pass for Retailers Only - No Exceptions</h3> 
+					<p class="package-description p-3">This right here is Package Description text which could go across multiple lines</p>
+					<div class="package-price">
+						<h3 class="m-0 fa-3x text-center">
+							<span class="d-block font-weight-bold small"><s>$2249</s></span>
+							<span class="d-block highlight font-weight-bold">$1749</span>
+						</h3> 
+						<p class="text-center">Bigger Early Bird, Save $500!</p>
+ 					</div>
+ 				    <div class="card-body px-0">
+						<ul class="package-details list-group list-group-flush">
+							<li class="list-group-item px-3">Learn from the most thought provoking presentations around</li>
+							<li class="list-group-item px-3">Find the hottest disrupters and fastest growing ecommerce companies</li>
+							<li class="list-group-item px-3">Includes all meals and refreshments during conference</li>
+							<li class="list-group-item px-3">Make new friends and contacts during the networking functions</li>
+						</ul>
+  				    </div>
+					<button href="#" class="btn btn-secondary btn-lg font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+				</div>
+			</div>
+ 		</div>
+		<!--- END T1P1, T2P1, T3P1  --->
+		
+		<!--- T1P1 T1P2 T1P3, T2P1 T2P2, T3P1  --->
+		<div class="row my-3">
+			<div class="col-md-12 my-3 py-3">
+				<hr/>
+			</div>
+			<div class="col-md-12 text-center">
+				<h2 class="font-weight-bold"><span class="text-primary">T1P1</span> <span class="text-primary">T1P2</span> <span class="text-primary">T1P3</span> <br/> <span class="text-danger">T2P1</span> <span class="text-danger">T2P2</span> <br/> <span class="text-success">T3P1</span> </h2>
+			</div>
+		</div>
+		<div class="row d-flex align-items-stretch tiers">
+ 			<div class="package col-md-4 col-sm-6 col-12 mx-auto my-3">
+				<div class="card card-primary h-100 mx-auto my-3 shadow" onclick="location.href='#';" style="cursor: pointer;">
+					<h3 class="card-title font-weight-bold m-0 p-3">Four Day Pass for Retailers Only - No Exceptions</h3> 
+					<p class="package-description p-3">This right here is Package Description text which could go across multiple lines</p>
+					<div class="package-price">
+						<h3 class="m-0 fa-3x text-center">
+							<span class="d-block font-weight-bold small"><s>$2249</s></span>
+							<span class="d-block highlight font-weight-bold">$1749</span>
+						</h3> 
+						<p class="text-center">Bigger Early Bird, Save $500!</p>
+					</div>
+				    <div class="card-body px-0">
+						<ul class="package-details list-group list-group-flush">
+							<li class="list-group-item px-3">Learn from the most thought provoking presentations around</li>
+							<li class="list-group-item px-3">Find the hottest disrupters and fastest growing ecommerce companies</li>
+							<li class="list-group-item px-3">Includes all meals and refreshments during conference</li>
+							<li class="list-group-item px-3">Make new friends and contacts during the networking functions</li>
+						</ul>
+				    </div>
+					<button href="#" class="btn btn-secondary btn-lg font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+				</div>
+			</div>
+			<div class="package col-md-4 col-sm-6 col-12 mx-auto my-3">
+				<div class="card card-primary h-100 mx-auto my-3 shadow" onclick="location.href='#';" style="cursor: pointer;">
+					<h3 class="card-title font-weight-bold m-0 p-3">Four Day Pass for Retailers Only - No Exceptions</h3> 
+					<p class="package-description p-3">This right here is Package Description text which could go across multiple lines</p>
+					<div class="package-price">
+						<h3 class="m-0 fa-3x text-center">
+							<span class="d-block font-weight-bold small"><s>$2249</s></span>
+							<span class="d-block highlight font-weight-bold">$1749</span>
+						</h3> 
+						<p class="text-center">Bigger Early Bird, Save $500!</p>
+					</div>
+				    <div class="card-body px-0">
+						<ul class="package-details list-group list-group-flush">
+							<li class="list-group-item px-3">Learn from the most thought provoking presentations around</li>
+							<li class="list-group-item px-3">Find the hottest disrupters and fastest growing ecommerce companies</li>
+							<li class="list-group-item px-3">Includes all meals and refreshments during conference</li>
+							<li class="list-group-item px-3">Make new friends and contacts during the networking functions</li>
+						</ul>
+				    </div>
+					<button href="#" class="btn btn-secondary btn-lg font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+				</div>
+			</div>
+			<div class="package col-md-4 col-sm-6 col-12 mx-auto my-3">
+				<div class="card card-primary h-100 mx-auto my-3 shadow" onclick="location.href='#';" style="cursor: pointer;">
+					<h3 class="card-title font-weight-bold m-0 p-3">Four Day Pass for Retailers Only - No Exceptions</h3> 
+					<p class="package-description p-3">This right here is Package Description text which could go across multiple lines</p>
+					<div class="package-price">
+						<h3 class="m-0 fa-3x text-center">
+							<span class="d-block font-weight-bold small"><s>$2249</s></span>
+							<span class="d-block highlight font-weight-bold">$1749</span>
+						</h3> 
+						<p class="text-center">Bigger Early Bird, Save $500!</p>
+					</div>
+				    <div class="card-body px-0">
+						<ul class="package-details list-group list-group-flush">
+							<li class="list-group-item px-3">Learn from the most thought provoking presentations around</li>
+							<li class="list-group-item px-3">Find the hottest disrupters and fastest growing ecommerce companies</li>
+							<li class="list-group-item px-3">Includes all meals and refreshments during conference</li>
+							<li class="list-group-item px-3">Make new friends and contacts during the networking functions</li>
+						</ul>
+				    </div>
+					<button href="#" class="btn btn-secondary btn-lg font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+				</div>
+			</div>
+		</div>
+ 		<div class="row d-flex align-items-stretch tiers">
+  			<div class="package col-md-4 col-sm-6 col-12 mx-auto my-3">
+				<div class="card card-danger h-100 mx-auto my-3 shadow" onclick="location.href='#';" style="cursor: pointer;">
+					<h3 class="card-title font-weight-bold m-0 p-3">Four Day Pass for Retailers Only - No Exceptions</h3> 
+					<p class="package-description p-3">This right here is Package Description text which could go across multiple lines</p>
+					<div class="package-price">
+						<h3 class="m-0 fa-3x text-center">
+							<span class="d-block font-weight-bold small"><s>$2249</s></span>
+							<span class="d-block highlight font-weight-bold">$1749</span>
+						</h3> 
+						<p class="text-center">Bigger Early Bird, Save $500!</p>
+					</div>
+				    <div class="card-body px-0">
+						<ul class="package-details list-group list-group-flush">
+							<li class="list-group-item px-3">Learn from the most thought provoking presentations around</li>
+							<li class="list-group-item px-3">Find the hottest disrupters and fastest growing ecommerce companies</li>
+							<li class="list-group-item px-3">Includes all meals and refreshments during conference</li>
+							<li class="list-group-item px-3">Make new friends and contacts during the networking functions</li>
+						</ul>
+				    </div>
+					<button href="#" class="btn btn-secondary btn-lg font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+				</div>
+			</div>
+			<div class="package col-md-4 col-sm-6 col-12 mx-auto my-3">
+				<div class="card card-danger h-100 mx-auto my-3 shadow" onclick="location.href='#';" style="cursor: pointer;">
+					<h3 class="card-title font-weight-bold m-0 p-3">Four Day Pass for Retailers Only - No Exceptions</h3> 
+					<p class="package-description p-3">This right here is Package Description text which could go across multiple lines</p>
+					<div class="package-price">
+						<h3 class="m-0 fa-3x text-center">
+							<span class="d-block font-weight-bold small"><s>$2249</s></span>
+							<span class="d-block highlight font-weight-bold">$1749</span>
+						</h3> 
+						<p class="text-center">Bigger Early Bird, Save $500!</p>
+					</div>
+				    <div class="card-body px-0">
+						<ul class="package-details list-group list-group-flush">
+							<li class="list-group-item px-3">Learn from the most thought provoking presentations around</li>
+							<li class="list-group-item px-3">Find the hottest disrupters and fastest growing ecommerce companies</li>
+							<li class="list-group-item px-3">Includes all meals and refreshments during conference</li>
+							<li class="list-group-item px-3">Make new friends and contacts during the networking functions</li>
+						</ul>
+				    </div>
+					<button href="#" class="btn btn-secondary btn-lg font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+				</div>
+			</div>
+		</div>
+ 		<div class="row d-flex align-items-stretch tiers">
+			<div class="package col-md-4 col-sm-6 col-12 mx-auto my-3">
+				<div class="card card-success h-100 mx-auto my-3 shadow" onclick="location.href='#';" style="cursor: pointer;">
+					<h3 class="card-title font-weight-bold m-0 p-3">Four Day Pass for Retailers Only - No Exceptions</h3> 
+					<p class="package-description p-3">This right here is Package Description text which could go across multiple lines</p>
+					<div class="package-price">
+						<h3 class="m-0 fa-3x text-center">
+							<span class="d-block font-weight-bold small"><s>$2249</s></span>
+							<span class="d-block highlight font-weight-bold">$1749</span>
+						</h3> 
+						<p class="text-center">Bigger Early Bird, Save $500!</p>
+					</div>
+				    <div class="card-body px-0">
+						<ul class="package-details list-group list-group-flush">
+							<li class="list-group-item px-3">Learn from the most thought provoking presentations around</li>
+							<li class="list-group-item px-3">Find the hottest disrupters and fastest growing ecommerce companies</li>
+							<li class="list-group-item px-3">Includes all meals and refreshments during conference</li>
+							<li class="list-group-item px-3">Make new friends and contacts during the networking functions</li>
+						</ul>
+				    </div>
+					<button href="#" class="btn btn-secondary btn-lg font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+				</div>
+			</div>
+  		</div>
+		<!--- END  T1P1 T1P2 T1P3, T2P1 T2P2, T3P1 --->
+		
+		<!--- T1P1 T1P2 T1P3, T2P1 T2P2 T3P1 --->
+		<div class="row my-3">
+			<div class="col-md-12 my-3 py-3">
+				<hr/>
+			</div>
+			<div class="col-md-12 text-center">
+				<h2 class="font-weight-bold"><span class="text-primary">T1P1 T1P2 T1P3</span> <br/> <span class="text-danger">T2P1 T2P2</span> <span class="text-success">T3P1</span></h2>
+			</div>
+		</div>
+ 		<div class="row d-flex align-items-stretch tiers">
+ 			<div class="package col-md-4 col-sm-6 col-12 mx-auto my-3">
+				<div class="card card-primary h-100 mx-auto my-3 shadow" onclick="location.href='#';" style="cursor: pointer;">
+					<h3 class="card-title font-weight-bold m-0 p-3">Four Day Pass for Retailers Only - No Exceptions</h3> 
+					<p class="package-description p-3">This right here is Package Description text which could go across multiple lines</p>
+					<div class="package-price">
+						<h3 class="m-0 fa-3x text-center">
+							<span class="d-block font-weight-bold small"><s>$2249</s></span>
+							<span class="d-block highlight font-weight-bold">$1749</span>
+						</h3> 
+						<p class="text-center">Bigger Early Bird, Save $500!</p>
+					</div>
+				    <div class="card-body px-0">
+						<ul class="package-details list-group list-group-flush">
+							<li class="list-group-item px-3">Learn from the most thought provoking presentations around</li>
+							<li class="list-group-item px-3">Find the hottest disrupters and fastest growing ecommerce companies</li>
+							<li class="list-group-item px-3">Includes all meals and refreshments during conference</li>
+							<li class="list-group-item px-3">Make new friends and contacts during the networking functions</li>
+						</ul>
+				    </div>
+					<button href="#" class="btn btn-secondary btn-lg font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+				</div>
+			</div>
+			<div class="package col-md-4 col-sm-6 col-12 mx-auto my-3">
+				<div class="card card-primary h-100 mx-auto my-3 shadow" onclick="location.href='#';" style="cursor: pointer;">
+					<h3 class="card-title font-weight-bold m-0 p-3">Four Day Pass for Retailers Only - No Exceptions</h3> 
+					<p class="package-description p-3">This right here is Package Description text which could go across multiple lines</p>
+					<div class="package-price">
+						<h3 class="m-0 fa-3x text-center">
+							<span class="d-block font-weight-bold small"><s>$2249</s></span>
+							<span class="d-block highlight font-weight-bold">$1749</span>
+						</h3> 
+						<p class="text-center">Bigger Early Bird, Save $500!</p>
+					</div>
+				    <div class="card-body px-0">
+						<ul class="package-details list-group list-group-flush">
+							<li class="list-group-item px-3">Learn from the most thought provoking presentations around</li>
+							<li class="list-group-item px-3">Find the hottest disrupters and fastest growing ecommerce companies</li>
+							<li class="list-group-item px-3">Includes all meals and refreshments during conference</li>
+							<li class="list-group-item px-3">Make new friends and contacts during the networking functions</li>
+						</ul>
+				    </div>
+					<button href="#" class="btn btn-secondary btn-lg font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+				</div>
+			</div>
+			<div class="package col-md-4 col-sm-6 col-12 mx-auto my-3">
+				<div class="card card-primary h-100 mx-auto my-3 shadow" onclick="location.href='#';" style="cursor: pointer;">
+					<h3 class="card-title font-weight-bold m-0 p-3">Four Day Pass for Retailers Only - No Exceptions</h3> 
+					<p class="package-description p-3">This right here is Package Description text which could go across multiple lines</p>
+					<div class="package-price">
+						<h3 class="m-0 fa-3x text-center">
+							<span class="d-block font-weight-bold small"><s>$2249</s></span>
+							<span class="d-block highlight font-weight-bold">$1749</span>
+						</h3> 
+						<p class="text-center">Bigger Early Bird, Save $500!</p>
+					</div>
+				    <div class="card-body px-0">
+						<ul class="package-details list-group list-group-flush">
+							<li class="list-group-item px-3">Learn from the most thought provoking presentations around</li>
+							<li class="list-group-item px-3">Find the hottest disrupters and fastest growing ecommerce companies</li>
+							<li class="list-group-item px-3">Includes all meals and refreshments during conference</li>
+							<li class="list-group-item px-3">Make new friends and contacts during the networking functions</li>
+						</ul>
+				    </div>
+					<button href="#" class="btn btn-secondary btn-lg font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+				</div>
+			</div>
+		</div>
+		<div class="row d-flex align-items-stretch tiers">
+ 			<div class="package col-md-4 col-sm-6 col-12 mx-auto my-3">
+				<div class="card card-danger h-100 mx-auto my-3 shadow" onclick="location.href='#';" style="cursor: pointer;">
+					<h3 class="card-title font-weight-bold m-0 p-3">Four Day Pass for Retailers Only - No Exceptions</h3> 
+					<p class="package-description p-3">This right here is Package Description text which could go across multiple lines</p>
+					<div class="package-price">
+						<h3 class="m-0 fa-3x text-center">
+							<span class="d-block font-weight-bold small"><s>$2249</s></span>
+							<span class="d-block highlight font-weight-bold">$1749</span>
+						</h3> 
+						<p class="text-center">Bigger Early Bird, Save $500!</p>
+					</div>
+				    <div class="card-body px-0">
+						<ul class="package-details list-group list-group-flush">
+							<li class="list-group-item px-3">Learn from the most thought provoking presentations around</li>
+							<li class="list-group-item px-3">Find the hottest disrupters and fastest growing ecommerce companies</li>
+							<li class="list-group-item px-3">Includes all meals and refreshments during conference</li>
+							<li class="list-group-item px-3">Make new friends and contacts during the networking functions</li>
+						</ul>
+				    </div>
+					<button href="#" class="btn btn-secondary btn-lg font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+				</div>
+			</div>
+			<div class="package col-md-4 col-sm-6 col-12 mx-auto my-3">
+				<div class="card card-danger h-100 mx-auto my-3 shadow" onclick="location.href='#';" style="cursor: pointer;">
+					<h3 class="card-title font-weight-bold m-0 p-3">Four Day Pass for Retailers Only - No Exceptions</h3> 
+					<p class="package-description p-3">This right here is Package Description text which could go across multiple lines</p>
+					<div class="package-price">
+						<h3 class="m-0 fa-3x text-center">
+							<span class="d-block font-weight-bold small"><s>$2249</s></span>
+							<span class="d-block highlight font-weight-bold">$1749</span>
+						</h3> 
+						<p class="text-center">Bigger Early Bird, Save $500!</p>
+					</div>
+				    <div class="card-body px-0">
+						<ul class="package-details list-group list-group-flush">
+							<li class="list-group-item px-3">Learn from the most thought provoking presentations around</li>
+							<li class="list-group-item px-3">Find the hottest disrupters and fastest growing ecommerce companies</li>
+							<li class="list-group-item px-3">Includes all meals and refreshments during conference</li>
+							<li class="list-group-item px-3">Make new friends and contacts during the networking functions</li>
+						</ul>
+				    </div>
+					<button href="#" class="btn btn-secondary btn-lg font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+				</div>
+			</div>
+			<div class="package col-md-4 col-sm-6 col-12 mx-auto my-3">
+				<div class="card card-success h-100 mx-auto my-3 shadow" onclick="location.href='#';" style="cursor: pointer;">
+					<h3 class="card-title font-weight-bold m-0 p-3">Four Day Pass for Retailers Only - No Exceptions</h3> 
+					<p class="package-description p-3">This right here is Package Description text which could go across multiple lines</p>
+					<div class="package-price">
+						<h3 class="m-0 fa-3x text-center">
+							<span class="d-block font-weight-bold small"><s>$2249</s></span>
+							<span class="d-block highlight font-weight-bold">$1749</span>
+						</h3> 
+						<p class="text-center">Bigger Early Bird, Save $500!</p>
+					</div>
+				    <div class="card-body px-0">
+						<ul class="package-details list-group list-group-flush">
+							<li class="list-group-item px-3">Learn from the most thought provoking presentations around</li>
+							<li class="list-group-item px-3">Find the hottest disrupters and fastest growing ecommerce companies</li>
+							<li class="list-group-item px-3">Includes all meals and refreshments during conference</li>
+							<li class="list-group-item px-3">Make new friends and contacts during the networking functions</li>
+						</ul>
+				    </div>
+					<button href="#" class="btn btn-secondary btn-lg font-weight-bold w-75 d-block mx-auto mt-auto mb-3">Add Attendee <i class="fa fa-plus"></i></button>
+				</div>
+			</div>
+		</div>
+		<!--- END  T1P1 T1P2 T1P3, T2P1 T2P2 T3P1 --->
+
+	</div>
+
+ 	<!-- JS -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+ 	 
+		
+</body>
+</html>
